@@ -11,16 +11,27 @@ It is also possible to use programmatic configuration, see: https://github.com/h
 
 ## Usage
 
-Run with a configuration file similar to `config1.json` in the root:
+Git clone this project and `cd` into it:
 
-```
-go run ./main.go config1.json
-```
+    $ git clone https://github.com/yuce/hazelcast-go-client-v1.3.0-nearcache-sample.git
+    $ cd hazelcast-go-client-v1.3.0-nearcache-sample
 
+Build the project with `make` or:
+
+    $ go build -o nearcache-sample .
+
+That creates the `nearcache-sample`.
+Run that binary with a configuration file similar to `config1.json` in the root:
+
+    ./nearcache-sample config1.json
+    
 ## Configuration
 
 A sample JSON configuration is provided in the `config1.json` file.
-See: https://github.com/hazelcast/hazelcast-go-client/blob/previews/v1.3.0/nearcache/config.go for more configuration options.
+Check out the following for more configuration options:
+
+* [Near Cache configuration](https://github.com/hazelcast/hazelcast-go-client/blob/previews/v1.3.0/nearcache/config.go)
+* [General configuration](https://github.com/hazelcast/hazelcast-go-client/blob/previews/v1.3.0/config.go)
 
 ## Documentation
 
